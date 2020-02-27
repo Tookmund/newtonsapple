@@ -1,0 +1,200 @@
+/*welcome to my twisted mind*/
+
+#buttstyled {
+    border: 0;
+    line-height: 4.5;
+    padding: 0 20px;
+    font-size: 1rem;
+    text-align: center;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+    border-radius: 70px;
+    background-image: linear-gradient(to top left,
+                                      rgba(0, 0, 0, .2),
+                                      rgba(0, 0, 0, .2) 30%,
+                                      rgba(0, 0, 0, 0));
+    box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
+                inset -2px -2px 3px rgba(0, 0, 0, .6);
+}
+
+#buttstyled:hover {
+}
+
+#buttstyled:active {
+    box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
+                inset 2px 2px
+                3px rgba(0, 0, 0, .6);
+}
+
+.start {
+  background-color: rgba(0, 220, 0, 1);
+
+}
+
+#buttstyled:not(.start) {
+  background-color: rgba(220, 0, 0, 1);
+}
+
+h1 {
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  color: white;
+  display: inline-block;}
+
+h3 {
+  font-family: "Comic Sans", "Comic Sans MS", "Chalkboard", "ChalkboardSE-Regular", sans-serif;
+  color: white;
+}
+
+h6, h4, h2 {
+  font-family: "Comic Sans", "Comic Sans MS", "Chalkboard", "ChalkboardSE-Regular", sans-serif;
+  color: white;
+  display: inline-block;
+}
+
+.directions {
+  display: block;
+}
+
+label {
+  color: white;
+  font-family: "Comic Sans", "Comic Sans MS", "Chalkboard", "ChalkboardSE-Regular", sans-serif;
+}
+
+.center {
+  text-align: center
+}
+
+.left {
+  text-align: left
+}
+
+body {
+  background-image:url("phonedrop.gif");
+  background-color: #735239;
+  background-repeat: repeat-both;
+  background-size: 150px, 250px;
+}
+
+img {
+  height: 70px;
+  width: auto;
+  top: 20px;
+}
+
+p {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  z-index: 1;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes hellapple1 {
+  from {transform: translate(0px, 0px);}
+  to {transform: translate(270px, 0px);}
+}
+
+@keyframes hellapple2 {
+  from {transform: translate(0px, 0px);}
+  to {transform: translate(-270px, 0px);}
+}
+
+#loading {
+		animation: rotation 1s infinite linear;
+}
+
+.normal {
+    animation-name: hellapple1;
+    left: 5px;
+    animation-direction: alternate;
+}
+.reverse {
+    animation-name: hellapple2;
+    left: 270px;
+    animation-direction: alternate;
+}
+
+@keyframes rotation {
+		from {transform: rotate(0deg);}
+		to {transform: rotate(359deg);}
+}
+
+.popup {
+  top: 1000px;
+  height: 100px;
+  width: 300px;
+}
+
+{box-sizing: border-box;}
+
+.open-button {
+  background-color: #555;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 23px;
+  right: 28px;
+  width: 280px;
+}
+
+.form-popup {
+  align: center;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  position: absolute;
+  z-index: 9;
+}
+
+.form-container {
+  padding: 10px;
+  background-image: url(phonedrop.gif);
+}
+
+.form-container input[type=text] {
+  width: 80%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+.form-container label {
+  display: block;
+}
+
+.form-container input[type=text]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+.form-container .btn {
+  background-color: green;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  width: 40%;
+  margin-bottom:10px;
+  opacity: 0.8;
+  display: inline;
+}
+
+.form-container .cancel {
+  background-color: green;
+  display: inline;
+  padding: 16px 20px;
+  margin-left: 10px;
+}
+
+#fourpanel {
+  align: center;
+  height: 100px;
+  width: 200px;
+}
+
+/* sftp rockafansky@tilde.club
+cd public_html/newtonsapple
+get, put

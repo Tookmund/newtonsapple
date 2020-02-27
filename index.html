@@ -1,0 +1,52 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Newton's Apple</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="ondevicemotion.js" defer></script>
+    <script>
+    function closeForm() {
+          let form = document.getElementById("myForm");
+          form.parentNode.removeChild(form);
+    }
+  </script>
+  </head>
+  <body class="center">
+    <div class="form-popup" id="myForm">
+  <form class="form-container">
+    <h2 class="directions">How to Use</h2>
+    <h4 class="directions">
+      <ol>
+        <li>Hold your phone with its screen parallel to the ground, at the highest point of the distance you would like to measure.</li>
+        <li>Press the "Start" button in our app.</li>
+        <li>Drop your phone. Make sure it falls in a straight line!</li>
+        <li>When you recover your phone, press the "Stop" button before picking it up.</li>
+      <img id="fourpanel" src="directions.png" />
+        <li>Enter your credit card information here to receive special benefits - like more accurate data! </li>
+      </ol>
+      </h4>
+    <input type="text" placeholder="credit card number" name="card">
+    <input type="text" placeholder="those three funky numbers on the back" name="sec">
+
+    <button type="submit" class="btn">Submit</button><button type="submit" class="btn cancel" onclick="closeForm()">No Thanks</button>
+  </form>
+</div>
+    <p class="normal"><img id="loading" class="left" src="favicon.png" /></p>
+    <header><h1> Newtonator</h1><img src="favicon.png" /></header>
+    <p class="reverse" align="right"><img id="loading" class="left" src="favicon.png" /></p>
+    <button class="start" align="center" id="buttstyled" type="button">Start</button>
+    <p class="normal"><img id="loading" class="left" src="favicon.png" /></p> <br/>
+    <h2 id="something">Result: <div id="result"></div></h2>
+    <h3>X Acceleration: <div id="xacc"></div></h3>
+    <p class="reverse" align="right"><img id="loading" class="left" src="favicon.png" /></p>
+    <h3>Y Acceleration: <div id="yacc"></div></h3>
+    <p class="normal"><img id="loading" class="left" src="favicon.png" /></p><h3>Z Acceleration: <div id="zacc"></div></h3>
+    <p class="reverse" align="right"><img id="loading" class="left" src="favicon.png" /></p><h3>Max Acceleration: <div id="maxacc"></div></h3>
+    <p class="normal"><img id="loading" class="left" src="favicon.png" /></p><h3>Interval: <div id="interval"></div></h3>
+    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank"><img style="padding: 50px;" src="popup.png" class="popup"/></a>
+  </body>
+</html>
+<!-- web server in terminal: python -m http.server-->
+<!-- control c to exit -->
